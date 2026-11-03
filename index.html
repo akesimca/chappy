@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>คลังข้อสอบ สพป.ร้อยเอ็ด เขต 2</title>
+<meta name="description" content="คลังข้อสอบ ป.1–ป.6, NT, RT, O-NET, PISA โดยงานส่งเสริมและพัฒนาการวัดและประเมินผลการศึกษา สพป.ร้อยเอ็ด เขต 2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --orange:#ff8a00; --yellow:#ffc928; --green:#12823b; --dark-green:#0b5d2a;
+    --blue:#2f6bff; --purple:#8a3ffc; --pink:#ff4f9a; --red:#f0452d; --cream:#fff8e6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Prompt',sans-serif;
+    color:#2b2b2b;
+    background:
+      radial-gradient(circle at 10% 10%, rgba(255,201,40,.35) 0, transparent 35%),
+      radial-gradient(circle at 90% 20%, rgba(47,107,255,.15) 0, transparent 35%),
+      radial-gradient(circle at 80% 90%, rgba(18,130,59,.18) 0, transparent 40%),
+      var(--cream);
+    min-height:100vh;
+  }
+  /* ---------- Banner ---------- */
+  .banner-wrap{max-width:1200px;margin:0 auto;padding:18px 16px 0}
+  .banner{
+    display:block;width:100%;height:auto;
+    border-radius:24px;
+    border:5px solid #fff;
+    box-shadow:0 12px 30px rgba(255,138,0,.35);
+  }
+  /* ---------- Section ---------- */
+  main{max-width:1200px;margin:0 auto;padding:28px 16px 40px}
+  .section-title{
+    display:flex;align-items:center;justify-content:center;gap:12px;
+    margin:26px 0 20px;text-align:center;
+  }
+  .section-title span.pill{
+    background:linear-gradient(135deg,var(--green),#27b85a);
+    color:#fff;font-weight:700;font-size:1.25rem;
+    padding:10px 28px;border-radius:999px;
+    box-shadow:0 6px 0 var(--dark-green),0 10px 18px rgba(0,0,0,.15);
+  }
+  .section-title.alt span.pill{
+    background:linear-gradient(135deg,var(--orange),var(--yellow));
+    box-shadow:0 6px 0 #c76500,0 10px 18px rgba(0,0,0,.15);
+    color:#4a2a00;
+  }
+  .grid{display:grid;gap:22px}
+  .grid.six{grid-template-columns:repeat(3,1fr)}
+  .grid.four{grid-template-columns:repeat(4,1fr)}
+
+  /* ---------- Card button ---------- */
+  .card{
+    --c1:#ff8a00;--c2:#ffc928;
+    position:relative;display:flex;flex-direction:column;align-items:center;
+    text-decoration:none;color:inherit;
+    background:#fff;border-radius:26px;
+    padding:30px 16px 22px;
+    border:4px solid var(--c1);
+    box-shadow:0 8px 0 var(--c1),0 16px 24px rgba(0,0,0,.12);
+    transition:transform .2s ease, box-shadow .2s ease;
+    overflow:hidden;
+  }
+  .card::before{ /* decorative bubble */
+    content:"";position:absolute;top:-40px;right:-40px;width:120px;height:120px;border-radius:50%;
+    background:linear-gradient(135deg,var(--c1),var(--c2));opacity:.18;
+  }
+  .card:hover,.card:focus-visible{
+    transform:translateY(-8px) rotate(-1deg);
+    box-shadow:0 14px 0 var(--c1),0 24px 30px rgba(0,0,0,.18);
+    outline:none;
+  }
+  .card:active{transform:translateY(2px);box-shadow:0 4px 0 var(--c1)}
+  .icon{
+    width:110px;height:110px;border-radius:50%;
+    display:grid;place-items:center;font-size:3.4rem;
+    background:linear-gradient(135deg,var(--c1),var(--c2));
+    box-shadow:inset 0 -8px 0 rgba(0,0,0,.12),0 8px 16px rgba(0,0,0,.18);
+    border:5px solid #fff;
+    position:relative;
+    transition:transform .3s;
+  }
+  .card:hover .icon{transform:scale(1.1) rotate(6deg)}
+  .badge{
+    position:absolute;bottom:-6px;right:-10px;
+    background:#fff;color:var(--c1);font-weight:800;font-size:.95rem;
+    padding:2px 10px;border-radius:999px;border:3px solid var(--c1);
+  }
+  .card h3{margin-top:18px;font-size:1.35rem;font-weight:700;text-align:center;color:#222}
+  .card p{font-size:.92rem;color:#666;margin-top:2px;text-align:center}
+  .open{
+    margin-top:14px;font-size:.92rem;font-weight:600;color:#fff;
+    background:linear-gradient(135deg,var(--c1),var(--c2));
+    padding:7px 20px;border-radius:999px;
+    display:inline-flex;gap:6px;align-items:center;
+  }
+
+  /* color themes */
+  .t-red{--c1:#f0452d;--c2:#ff8a5c}
+  .t-orange{--c1:#ff8a00;--c2:#ffc928}
+  .t-green{--c1:#12a24a;--c2:#6ddc7d}
+  .t-blue{--c1:#2f6bff;--c2:#5ec8ff}
+  .t-purple{--c1:#8a3ffc;--c2:#c07bff}
+  .t-pink{--c1:#ff4f9a;--c2:#ff9fc6}
+  .t-teal{--c1:#0aa6a6;--c2:#6be3d0}
+
+  /* ---------- Footer ---------- */
+  footer{
+    background:linear-gradient(180deg,var(--green),var(--dark-green));
+    color:#fff;text-align:center;padding:34px 16px 28px;position:relative;
+    border-top:8px solid var(--yellow);
+  }
+  footer .org{font-size:1.35rem;font-weight:700}
+  footer .unit{
+    display:inline-block;margin-top:10px;
+    background:var(--yellow);color:#4a2a00;font-weight:600;
+    padding:8px 22px;border-radius:999px;
+  }
+  footer small{display:block;margin-top:16px;opacity:.8}
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:992px){
+    .grid.four{grid-template-columns:repeat(2,1fr)}
+  }
+  @media(max-width:720px){
+    .grid.six{grid-template-columns:repeat(2,1fr)}
+    .grid{gap:14px}
+    .icon{width:84px;height:84px;font-size:2.5rem}
+    .card{padding:22px 10px 18px;border-radius:20px}
+    .card h3{font-size:1.1rem}
+    .card p{font-size:.8rem}
+    .section-title span.pill{font-size:1.05rem;padding:8px 20px}
+    footer .org{font-size:1.1rem}
+  }
+  @media(max-width:380px){
+    .grid.six,.grid.four{grid-template-columns:1fr}
+  }
+  /* entrance animation */
+  .card{animation:pop .5s ease backwards}
+  @keyframes pop{from{opacity:0;transform:translateY(20px) scale(.95)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="banner-wrap">
+  <img class="banner" src="banner.jpg"
+       alt="คลังข้อสอบ สพป.ร้อยเอ็ด เขต 2 ระดับชั้น ป.1–ม.3 O-NET RT NT PISA">
+</header>
+
+<main>
+  <div class="section-title"><span class="pill">📚 ข้อสอบรายระดับชั้น</span></div>
+  <section class="grid six" id="grades"></section>
+
+  <div class="section-title alt"><span class="pill">🎯 ข้อสอบวัดระดับชาติ / นานาชาติ</span></div>
+  <section class="grid four" id="national"></section>
+</main>
+
+<footer>
+  <div class="org">สำนักงานเขตพื้นที่การศึกษาประถมศึกษาร้อยเอ็ด เขต 2</div>
+  <div class="unit">งานส่งเสริมและพัฒนาการวัดและประเมินผลการศึกษา</div>
+  <small>© <span id="year"></span> สพป.ร้อยเอ็ด เขต 2 | คลังข้อสอบเพื่อพัฒนาการเรียนรู้ของผู้เรียน</small>
+</footer>
+
+<script>
+  /* ===== แก้ไขลิงก์ Google Drive ที่นี่ (แทนที่ # ด้วยลิงก์โฟลเดอร์จริง) ===== */
+  const grades = [
+    {title:"ข้อสอบ ป.1", sub:"ระดับชั้นประถมศึกษาปีที่ 1", icon:"🎒", badge:"ป.1", theme:"t-red",    url:"#"},
+    {title:"ข้อสอบ ป.2", sub:"ระดับชั้นประถมศึกษาปีที่ 2", icon:"✏️", badge:"ป.2", theme:"t-orange", url:"#"},
+    {title:"ข้อสอบ ป.3", sub:"ระดับชั้นประถมศึกษาปีที่ 3", icon:"📒", badge:"ป.3", theme:"t-green",  url:"#"},
+    {title:"ข้อสอบ ป.4", sub:"ระดับชั้นประถมศึกษาปีที่ 4", icon:"🔬", badge:"ป.4", theme:"t-blue",   url:"#"},
+    {title:"ข้อสอบ ป.5", sub:"ระดับชั้นประถมศึกษาปีที่ 5", icon:"🧮", badge:"ป.5", theme:"t-purple", url:"#"},
+    {title:"ข้อสอบ ป.6", sub:"ระดับชั้นประถมศึกษาปีที่ 6", icon:"🎓", badge:"ป.6", theme:"t-pink",   url:"#"}
+  ];
+  const national = [
+    {title:"ข้อสอบ NT",    sub:"การทดสอบระดับชาติ ป.3",              icon:"📖", badge:"NT",    theme:"t-green",  url:"#"},
+    {title:"ข้อสอบ RT",    sub:"การประเมินความสามารถด้านการอ่าน ป.1", icon:"🔤", badge:"RT",    theme:"t-orange", url:"#"},
+    {title:"ข้อสอบ O-NET", sub:"การทดสอบทางการศึกษาระดับชาติ",       icon:"🏆", badge:"O-NET", theme:"t-blue",   url:"#"},
+    {title:"ข้อสอบ PISA",  sub:"การประเมินผลนักเรียนนานาชาติ",        icon:"🌏", badge:"PISA",  theme:"t-purple", url:"#"}
+  ];
+  /* ======================================================================= */
+
+  function render(list, el){
+    el.innerHTML = list.map((x,i)=>`
+      <a class="card ${x.theme}" href="${x.url}" target="_blank" rel="noopener noreferrer"
+         style="animation-delay:${i*70}ms" aria-label="${x.title} (เปิดใน Google Drive)">
+        <div class="icon">${x.icon}<span class="badge">${x.badge}</span></div>
+        <h3>${x.title}</h3>
+        <p>${x.sub}</p>
+        <span class="open">เปิดโฟลเดอร์ ➜</span>
+      </a>`).join("");
+  }
+  render(grades, document.getElementById("grades"));
+  render(national, document.getElementById("national"));
+  document.getElementById("year").textContent = new Date().getFullYear()+543;
+</script>
+</body>
+</html>
